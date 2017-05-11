@@ -13,5 +13,6 @@ public class Test {
         String ss = ",4,3,,55,6,7";
         String s = ",,";
         System.out.println(ss.contains(s));
+
     }
 }

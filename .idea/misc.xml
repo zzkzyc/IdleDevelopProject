@@ -3,11 +3,12 @@
   <component name="EclipseCodeFormatter">
     <option name="defaultSettings" value="true" />
     <option name="formatter" value="ECLIPSE" />
-    <option name="id" value="1464156470560" />
-    <option name="importOrderConfigFilePath" value="D:/dev-soft/eclipse/code-formatter/qccr-Formatter.xml" />
+    <option name="id" value="1489462525091" />
+    <option name="importOrderConfigFilePath" value="$PROJECT_DIR$/../../work-soft/idea_code_format/eclipse&amp;intellij-codestyle.xml" />
+    <option name="importOrderFromFile" value="true" />
     <option name="name" value="default" />
-    <option name="pathToConfigFileJava" value="D:/dev-soft/IntelliJ IDEA/interfaceRule/接口规范/qccr-Formatter.xml" />
-    <option name="selectedJavaProfile" value="My Convention" />
+    <option name="pathToConfigFileJava" value="$PROJECT_DIR$/../../work-soft/idea_code_format/eclipse&amp;intellij-codestyle.xml" />
+    <option name="selectedJavaProfile" value="GoogleStyle" />
   </component>
   <component name="EntryPointsManager">
     <entry_points version="2.0" />
@@ -22,7 +23,7 @@
     <ConfirmationsSetting value="0" id="Add" />
     <ConfirmationsSetting value="0" id="Remove" />
   </component>
-  <component name="ProjectRootManager" version="2" languageLevel="JDK_1_7" default="true" assert-keyword="true" jdk-15="true" project-jdk-name="1.7" project-jdk-type="JavaSDK">
+  <component name="ProjectRootManager" version="2" languageLevel="JDK_1_8" default="true" assert-keyword="true" jdk-15="true" project-jdk-name="1.8" project-jdk-type="JavaSDK">
     <output url="file://$PROJECT_DIR$/out" />
   </component>
 </project>
