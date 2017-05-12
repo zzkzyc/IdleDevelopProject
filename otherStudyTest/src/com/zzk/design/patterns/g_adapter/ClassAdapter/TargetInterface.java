@@ -2,7 +2,7 @@
  * qccr.com Inc.
  * Copyright (c) 2014-2016 All Rights Reserved.
  */
-package com.zzk.design.patterns.adapter.ObjectAdapter;
+package com.zzk.design.patterns.g_adapter.ClassAdapter;
 
 /**
  * 最后对外接口

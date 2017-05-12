@@ -2,7 +2,7 @@
  * qccr.com Inc.
  * Copyright (c) 2014-2016 All Rights Reserved.
  */
-package com.zzk.design.patterns.adapter.ObjectAdapter;
+package com.zzk.design.patterns.g_adapter.ClassAdapter;
 
 /**
  * 原始类
@@ -12,6 +12,6 @@ package com.zzk.design.patterns.adapter.ObjectAdapter;
  */
 public class Source {
     public void method1() {
-        System.out.println("this is method1 of ObjectAdapter");
+        System.out.println("this is method1");
     }
 }

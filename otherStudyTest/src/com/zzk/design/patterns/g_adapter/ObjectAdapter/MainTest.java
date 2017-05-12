@@ -2,7 +2,9 @@
  * qccr.com Inc.
  * Copyright (c) 2014-2016 All Rights Reserved.
  */
-package com.zzk.design.patterns.adapter.ClassAdapter;
+package com.zzk.design.patterns.g_adapter.ObjectAdapter;
+
+
 
 /**
  * 测试类
@@ -12,7 +14,8 @@ package com.zzk.design.patterns.adapter.ClassAdapter;
  */
 public class MainTest {
     public static void main(String[] args) {
-        TargetInterface targetInterface = new Adapter();
+        Source source = new Source();
+        TargetInterface targetInterface = new Adapter(source);
         targetInterface.method1();
         targetInterface.method2();
     }
