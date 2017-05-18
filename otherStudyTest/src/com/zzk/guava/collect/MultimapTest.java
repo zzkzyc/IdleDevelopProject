@@ -7,6 +7,8 @@ package com.zzk.guava.collect;
 import com.google.common.base.Function;
 import com.google.common.collect.*;
 
+import java.util.Collection;
+import java.util.Iterator;
 import java.util.List;
 import java.util.Map;
 
@@ -44,11 +46,8 @@ public class MultimapTest {
         Map<String,String> map1 = ImmutableMap.of("省","江西","市","上饶");
         Map<String,String> map2 = ImmutableMap.of("省","浙江","市","义务");
         List<Map<String,String>> list = Lists.newArrayList(map,map1,map2);
-        Multimap<String,Map<String,String>> shengMap = Multimaps.index(list, new Function<Map<String, String>, String>() {
-            @Override
-            public String apply(Map<String, String> input) {
-                return input.get("省");
-            }
+        Multimap<String,Map<String,String>> shengMap = Multimaps.index(list, input -> {
+            return input.get("省");
         });
         Multimap<String,Map<String,String>> shiMap = Multimaps.index(list, new Function<Map<String, String>, String>() {
             @Override
@@ -57,8 +56,13 @@ public class MultimapTest {
             }
         });
         for(String ss : shengMap.keySet()) {
-            System.out.println(ss);
-
+            System.out.println(ss+":" + shengMap.get(ss));
+            Iterator<Map<String,String>> iterator = shengMap.get(ss).iterator();
+            while (iterator.hasNext()) {
+                for (Map.Entry<String, String> nestedMap : iterator.next().entrySet()) {
+                    System.out.println(nestedMap.getKey() + "=" +nestedMap.getValue());
+                }
+            }
             System.out.println("**************");
 
         }
